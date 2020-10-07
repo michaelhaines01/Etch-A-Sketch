@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="Etch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:grey;">
+    <div class = "heading-container">
+        <h1 class = 'heading'>Etch-A-Sketch</h1>    
+    </div>
+    <div class = "grid-container">
+        <div id = 'grid'>
+        </div>
+    </div>
+    <div class = "button-container">
+        <button class = 'reset-button' id ='btn'>RESET</button>
+        <div class ="radio-container">
+            <label for="shader">
+                <input type="radio" class = "radio" name = 'shader' id="shader" value="1"> Shader
+            </label>
+            <label>
+                <input type="radio" class = "radio" name = 'shader' id="random" value="1"> Random
+            </label>
+        </div>
+    </div> 
+    <div class='slidecontainer'>    
+        <input class = "slider" type="range" min='2' max='100' id ='myrange'  value="16"   step="1"></input>
+    </div>   
+    <div class= 'sliderdeets'>
+        <h3>Less pixels!</h3>
+        <h3>More pixels!</h3>
+    </div>   
+</body>
+</html>
+
+<script src = 'Etch-A-Sketch.js'></script>

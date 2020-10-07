@@ -1,0 +1,115 @@
+.grid-container{
+    display:flex;
+    margin:auto;
+    height:500px;
+    width: 500px;
+    background-color:#d3d3d3;
+
+}
+#grid {
+    margin:auto;
+    height:450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(var(--repeat-num),minmax(1px,auto) [col-start]);
+    grid-template-rows: repeat(var(--repeat-num), minmax(1px,auto) [col-start]);
+}
+.pixel {
+    background-color: #4CAF50;
+    border: 1px solid black;
+}
+.heading{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+}
+.heading-container{
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    width:35%;
+    margin:auto;
+}
+
+.reset-button{
+    color:black;
+    margin-top:25px;
+    margin-bottom:25px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    height: 45px;
+    width: 90px;
+}
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  .sliderdeets{
+    font-family: 'Press Start 2P', cursive;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .radio-container{
+    font-family: 'Press Start 2P', cursive;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    
+  }
+
+  input[type=radio] {
+    border: 1px solid #d3d3d3;
+    padding: 0.5em;
+    -webkit-appearance: none;
+  }
+
+  input[type=radio]:checked {
+    background: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==) no-repeat center center;
+    background-size: 9px 9px;
+  }
